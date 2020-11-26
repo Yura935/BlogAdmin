@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-light" href="#">Pizza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link  text-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-secondary">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-secondary" [routerLink]="[ '/blog' ]">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-secondary">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-secondary" [routerLink]="[ '/admin-blog' ]">Admin</a>
+            </li>
+        </ul>
+    </div>
+</nav>

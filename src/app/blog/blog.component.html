@@ -1,0 +1,12 @@
+<div class="main">
+    <div class="block" *ngFor="let blog of userBlogs">
+        <div class="card post">
+            <img [src]="blog.image" class="card-img-top " alt="...">
+            <div class="card-body">
+                <p class="text-info">{{ blog.date | date: short }} {{ blog.author }}</p>
+                <h4 class="card-title">{{ blog.title }}</h4>
+                <p class="card-text">{{ blog.text }}</p>
+            </div>
+        </div>
+    </div>
+</div>
